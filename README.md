@@ -8,7 +8,7 @@ Run the script **evaluation.py** for the evaluation of the development set as sh
 python3 evaluation.py --ids_file=<ids_file> --anns_file=<anns_file> --dev_file=<dev_file> --out_file=<out_file>
 ```
 
-All four arguments are optional if using the default values **ids_development.txt**, **anns_train_dev.txt**, **dev.txt** and **output.txt**, respectively. The two first default files (**ids_development.txt** and **anns_train_dev.txt**) are the ones included in the training data zip file. The predicitons for the development set (file **dev.txt**) should have the following format:
+All four arguments are optional if using the default values **ids_development.txt**, **anns_train_dev.txt**, **dev.txt** and **output.txt**, respectively. The two first default files (**ids_development.txt** and **anns_train_dev.txt**) are the ones included in the training data zip file. The predictions for the development set (file **dev.txt**) should have the following format:
 
 ```
 13860	II
