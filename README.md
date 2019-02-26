@@ -8,7 +8,14 @@ Run the script **evaluation.py** for the evaluation of the development set as sh
 python3 evaluation.py --ids_file=<ids_file> --anns_file=<anns_file> --dev_file=<dev_file> --out_file=<out_file>
 ```
 
-All four arguments are optional if using the default values **ids_development.txt**, **anns_train_dev.txt**, **dev.txt** and **output.txt**, respectively. The first two arguments (<ids_file> and <anns_file>) should the ones included in the training data zip file (**ids_development.txt** and **anns_train_dev.txt**, respectively). 
+The script receives four arguments:
+
+- ids_file: list of documents ids of the development set, i.e. file **ids_development.txt** in the training data zip file
+- anns_file: gold-standard annotations, i.e. file **anns_train_dev.txt** in the training data zip file
+- dev_file: predictions for the development set (cf. format below)
+- out_file: output file with evaluation (TP, FP and FN) and scores
+
+However, all four arguments are optional if using the default values **ids_development.txt**, **anns_train_dev.txt**, **dev.txt** and **output.txt**, respectively. 
 
 The predictions for the development set (<dev_file>) should have the following format:
 
@@ -21,7 +28,7 @@ The predictions for the development set (<dev_file>) should have the following f
 
 Each line should start with the document id, followed by a TAB (if any prediciton is available for the document), and followed by the ICD-10 codes separated by the pipe symbol (|).
 
-The output file (<out_file>, if default file) will inlude a record of all true positives, false positives and false negative, as well as the scores (precision, recall, f-score).
+The output file (<out_file>) includes a record of all true positives, false positives and false negative, as well as the scores (precision, recall, f-score).
 
 
 
