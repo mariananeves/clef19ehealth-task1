@@ -10,7 +10,7 @@ python3 evaluation.py --ids_file=<ids_file> --anns_file=<anns_file> --dev_file=<
 
 The script receives four arguments:
 
-- ids_file: list of documents ids of the development set, i.e. file **ids_development.txt** in the training data zip file
+- ids_file: list of document ids of the development set, i.e. file **ids_development.txt** in the training data zip file
 - anns_file: gold-standard annotations, i.e. file **anns_train_dev.txt** in the training data zip file
 - dev_file: predictions for the development set (cf. format below)
 - out_file: output file with evaluation (TP, FP and FN) and scores
