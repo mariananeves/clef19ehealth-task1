@@ -13,7 +13,7 @@ The script receives four arguments:
 - ids_file: list of document ids of the development set, i.e. file **ids_development.txt** in the training data zip file
 - anns_file: gold-standard annotations, i.e. file **anns_train_dev.txt** in the training data zip file
 - dev_file: predictions for the development set (cf. format below)
-- out_file: output file with evaluation (TP, FP and FN) and scores
+- out_file: output file with evaluation (TP, FP, FP, precision, recall and f-score)
 
 However, all four arguments are optional if using the default values **ids_development.txt**, **anns_train_dev.txt**, **dev.txt** and **output.txt**, respectively. 
 
@@ -26,9 +26,9 @@ The predictions for the development set (<dev_file>) should have the following f
 8630	XIII|M00-M25|M05-M14
 ```
 
-Each line should start with the document id, followed by a TAB (if any prediciton is available for the document), and followed by the ICD-10 codes separated by the pipe symbol (|).
+Each line should start with the document id. If any prediction is available for the document, the document id should be followed by a TAB and then by the ICD-10 codes separated by the pipe symbol (|). All documents from the development set should be included in the file, including the ones without any prediction. The order of the documents and the codes is not relevant.
 
-The output file (<out_file>) includes a record of all true positives, false positives and false negative, as well as the scores (precision, recall, f-score).
+
 
 
 
