@@ -1,6 +1,6 @@
 # Task 1 (Multilingual Information Extraction) of CLEF eHealth 2019 
 
-Please download our [training data from here](https://www.openagrar.de/receive/openagrar_mods_00046540?lang=en) for the [Task 1 of the CLEF eHealth challenge](http://clef-ehealth.org/).
+Please download our [training data from here](https://www.openagrar.de/receive/openagrar_mods_00046540?lang=en) and [test set from here](https://www.openagrar.de/receive/openagrar_mods_00049062?lang=en) for the [Task 1 of the CLEF eHealth challenge](http://clef-ehealth.org/).
 
 Run the script **evaluation.py** for the evaluation of the development set as shown below:
 
